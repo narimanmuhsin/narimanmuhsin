@@ -13,4 +13,28 @@ jobs:
     steps:
       - uses: athul/waka-readme@master 
         with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} # optional if on profile readme
           WAKATIME_API_KEY: ${{ secrets.WAKA_API_KEY }}
+          ### meta
+          API_BASE_URL: https://wakatime.com/api # optional
+          REPOSITORY: narimanmuhsin/narimanmuhsin # optional
+          ### content
+          SHOW_TITLE: true # optional
+          SECTION_NAME: waka # optional
+          BLOCKS: -> # optional
+          CODE_LANG: rust # optional
+          TIME_RANGE: all_time # optional
+          LANG_COUNT: 10 # optional
+          SHOW_TIME: true # optional
+          SHOW_TOTAL: true # optional
+          SHOW_MASKED_TIME: true # optional
+          STOP_AT_OTHER: true # optional
+          IGNORED_LANGUAGES: YAML TOML # optional
+          ### commit
+          COMMIT_MESSAGE: Updated waka-readme graph with new metrics # optional
+          TARGET_BRANCH: master # optional
+          TARGET_PATH: README.md # optional
+          COMMITTER_NAME: GitHubActionBot # optional
+          COMMITTER_EMAIL: action-bot@github.com # optional
+          AUTHOR_NAME: Nariman Muhsin # optional
+          AUTHOR_EMAIL: nariman.muhsin@tornet.co # optional
