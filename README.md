@@ -12,7 +12,11 @@
 📊 **Weekly development breakdown**
 <!--START_SECTION:waka-->
 
-```txt
+```rust
+From: 06 December 2024 - To: 06 December 2024
+
+Total Time: 0 secs
+
 No activity tracked
 ```
 
